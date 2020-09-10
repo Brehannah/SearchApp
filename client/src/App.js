@@ -1,11 +1,18 @@
 import React from 'react';
-import Stock from './stock';
+import Stock from './Stock';
+import StockIBM from './StockIBM';
 import './App.css';
+import Jumbotron from './Jumbotron';
+import StockTSLA from './StockTSLA';
 
 function App() {
   return (
     <div className="App">
+      <Jumbotron/>
       <Stock></Stock>
+      <StockIBM></StockIBM>
+      <StockTSLA/>
+
     </div>
   );
 }
@@ -24,8 +31,8 @@ export default App;
 
 // const app = express();
 
-// app.listen('3000', () => {
-//   console.log('server started on port 3000');
+// app.listen('3001', () => {
+//   console.log('server started on port 3001');
 // })
 
 // function App() {

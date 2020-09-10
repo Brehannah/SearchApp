@@ -1,7 +1,7 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
-class Stock extends React.Component {
+class StockIBM extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,8 +18,9 @@ class Stock extends React.Component {
         const pointerToThis = this;
         console.log(pointerToThis);
         const API_KEY = 'A4C4T4TWZX1H5A9Z';
-        let StockSymbol = 'AMZN';
+        let StockSymbol = 'IBM';
         let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
+        // let API_Call = 'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}';
         let stockChartXValuesFunction = [];
         let stockChartYValuesFunction = [];
 
@@ -62,11 +63,11 @@ class Stock extends React.Component {
                             marker: { color: 'red' },
                         }
                     ]}
-                    layout={{ width: 720, height: 440, title: 'Amazon Stock' }}
+                    layout={{ width: 720, height: 440, title: 'IBM Stock' }}
                 />
             </div>
         )
     }
 }
 
-export default Stock;
+export default StockIBM;
