@@ -4,14 +4,18 @@ import StockIBM from './StockIBM';
 import './App.css';
 import Jumbotron from './Jumbotron';
 import StockTSLA from './StockTSLA';
+import StockFB from './StockFB';
+
 
 function App() {
   return (
     <div className="App">
       <Jumbotron/>
+      <StockTSLA/>
+      <StockFB/>
       <Stock></Stock>
       <StockIBM></StockIBM>
-      <StockTSLA/>
+      
 
     </div>
   );
@@ -25,7 +29,7 @@ export default App;
 // const db = mysql.createConnection({
 // host : 'localhost',
 // user : 'root',
-// password : 'happyBre3',
+// password : 'root',
 // // database : 'mysql'
 // });
 

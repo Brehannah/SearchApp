@@ -51,7 +51,7 @@ class Stock extends React.Component {
     render() {
         return (
             <div>
-                <h1>Stock Market</h1>
+                <h1>Amazon</h1>
                 <Plot
                     data={[
                         {
@@ -62,7 +62,7 @@ class Stock extends React.Component {
                             marker: { color: 'red' },
                         }
                     ]}
-                    layout={{ width: 720, height: 440, title: 'Amazon Stock' }}
+                    layout={{ width: 720, height: 440, title: 'AMZN Stock' }}
                 />
             </div>
         )
