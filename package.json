@@ -1,0 +1,27 @@
+{
+  "name": "searchapp",
+  "version": "1.0.0",
+  "description": "app that allows a user to search for information",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brehannah/SearchApp.git"
+  },
+  "author": "Breana Hannah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brehannah/SearchApp/issues"
+  },
+  "homepage": "https://github.com/Brehannah/SearchApp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "plotly.js": "^1.55.2",
+    "react-plotly.js": "^2.4.0",
+    "sequelize": "^6.3.4"
+  }
+}
