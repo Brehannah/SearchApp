@@ -5,21 +5,26 @@ import './App.css';
 import Jumbotron from './Jumbotron';
 import StockTSLA from './StockTSLA';
 import StockFB from './StockFB';
-
+import StockAAPL from './StockAAPL';
 
 function App() {
   return (
     <div className="App">
-      <Jumbotron/>
-      <StockTSLA/>
-      <StockFB/>
+      <Jumbotron />
+      <StockAAPL/>
+      <StockTSLA />
+      <StockFB />
       <Stock></Stock>
       <StockIBM></StockIBM>
-      
-
+      {/* <NameForm/> */}
+      <img src="./images/trade.jpg" alt="" />
     </div>
+
+    
   );
 }
+
+
 
 export default App;
 // const express = require('express');
